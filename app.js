@@ -68,6 +68,7 @@ function nextQues() {
     }
 }
 var mainDiv=document.getElementById("a");
+var quizTime=document.getElementById("quiz-time-left")
 function checkAns(a, b) {
     if (a == b) {
         marks++;
@@ -84,6 +85,7 @@ function checkAns(a, b) {
             cong.style.display = "block";
             
             mainDiv.style.display="none"
+            quizTime.style.display="none"
         }
     }
     else{
@@ -99,6 +101,7 @@ function checkAns(a, b) {
             
             cong.style.display = "block";
             mainDiv.style.display="none"
+            quizTime.style.display="none"
         }
 }
 }
